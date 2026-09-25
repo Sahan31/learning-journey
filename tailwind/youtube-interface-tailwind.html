@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            --font-poppins: "Roboto", sans-serif;
+        }
+        
+        
+    </style>
+</head>
+<body class="font-roboto pt-[70px] pl-[72px]">
+    
+     <!-- header  -->
+     <!-- <header class="fixed top-0 left-0 right-0 z-[100] flex justify-between h-[70px] py-0 px-[20px] bg-white">
+        <div class="w-[150px] flex items-center ml-[10px]">
+            <img class="h-5" src="img/hamburger-menu.svg" alt="menu">
+            <img class="h-5 ml-[15px]" src="img/youtube-logo.svg" alt="youtube-logo">
+        </div>
+        <div class="flex flex-1 justify-center mx-[50px] my-0 max-w-[500px] items-center">
+            <div class="flex flex-1 items-center">
+                <input class="h-10 pl-[10px] border border-[rgb(204,204,204)] w-full" type="text" placeholder="Search">
+                <button class="h-10 w-[60px] border border-[rgb(204,204,204)] border-l-0 flex items-center justify-center">
+                    <img class="h-[25px]" src="img/search.svg" alt="search">
+                </button>
+            </div>
+            <button class="w-10 h-10 bg-[rgb(247,247,247)] border-none rounded-[20px] ml-[10px] flex items-center justify-center">
+                <img class="w-6 h-6" src="img/voice-search-icon.svg" alt="voice">
+            </button>
+        </div>
+    
+        <div class="w-[200px] flex items-center justify-between">
+            <img class="w-6 h-6" src="img/upload.svg" alt="upload">
+            <img class="w-6 h-6" src="img/youtube-apps.svg" alt="apps">
+            <div class="flex relative items-center"> 
+                <p class="absolute right-[-3px] top-0 bg-red-500 p-[2px] rounded-full w-[15px] h-[15px] text-[10px] text-white font-bold flex justify-center items-center">3</p>        
+                <img class="w-6 h-6" src="img/notifications.svg" alt="notifications">
+            </div>
+            <img class="w-8 h-8 rounded-[20px]" src="img/my-channel.jpeg" alt="channel">
+        </div>
+    </header> -->
+
+      <!-- sidebar  -->
+      <!-- <nav class="w-[72px] bg-white fixed left-0 top-[70px] bottom-0 z-[100]">
+        <div class="flex flex-col items-center mx-0 my-5">
+            <img class="h-6" src="img/home.svg" alt="">
+            <p class="text-[10px] mt-[3px]">Home</p>
+        </div>
+        <div class="flex flex-col items-center mx-0 my-5">
+            <img class="h-6"  src="img/explore.svg" alt="">
+            <p class="text-[10px] mt-[3px]">Explore</p>
+        </div>
+        <div class="flex flex-col items-center mx-0 my-5">
+            <img class="h-6"  src="img/subscriptions.svg" alt="">
+            <p class="text-[10px] mt-[3px]">Subscriptions</p>
+        </div>
+        <div class="flex flex-col items-center mx-0 my-5">
+            <img class="h-6"  src="img/originals.svg" alt="">
+            <p class="text-[10px] mt-[3px]">Originals</p>
+        </div>
+        <div class="flex flex-col items-center mx-0 my-5">
+            <img class="h-6"  src="img/youtube-music.svg" alt="">
+            <p class="text-[10px] mt-[3px]">Youtube music</p>
+        </div>
+        <div class="flex flex-col items-center mx-0 my-5">
+            <img class="h-6"  src="img/library.svg" alt="">
+            <p class="text-[10px] mt-[3px]">Library</p>
+        </div>
+    </nav> -->
+    
+      <!-- main section  -->
+      <main class="grid-cols-3 gap-[15px] p-5 bg-[#f9f9f9] grid">
+        <div>
+            <div class="relative">
+                <img class="w-full" src="img/thumbnail-1.webp" alt="thumbnail-1">
+                <p class="absolute bottom-[10px] righ-[10px] text-white bg-black p-[5px] text-xs">14:24</p>
+            </div>
+            <div class="flex mt-[10px]">
+                <img class="w-9 h-9 rounded-full mr-[15px]" src="img/channel-1.jpeg" alt="profile-pic">
+                <div>
+                    <p class="text-sm font-medium leading-5 mb-[10px]">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">Marques Brownlee</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">3.4M views · 6 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="relative">
+                <img class="w-full" src="img/thumbnail-2.webp" alt="thumbnail-1">
+                <p class="absolute bottom-[10px] righ-[10px] text-white bg-black p-[5px] text-xs">14:24</p>
+            </div>
+            <div class="flex mt-[10px]">
+                <img class="w-9 h-9 rounded-full mr-[15px]" src="img/channel-2.jpeg" alt="profile-pic">
+                <div>
+                    <p class="text-sm font-medium leading-5 mb-[10px]">Try Not To Laugh Challenge #9</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">Markiplier</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">19M views · 4 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="relative">
+                <img class="w-full" src="img/thumbnail-3.webp" alt="thumbnail-1">
+                <p class="absolute bottom-[10px] righ-[10px] text-white bg-black p-[5px] text-xs">14:24</p>
+            </div>
+            <div class="flex mt-[10px]">
+                <img class="w-9 h-9 rounded-full mr-[15px]" src="img/channel-3.jpeg" alt="profile-pic">
+                <div>
+                    <p class="text-sm font-medium leading-5 mb-[10px]">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">SSSniperWolf</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">12M views · 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="relative">
+                <img class="w-full" src="img/thumbnail-4.webp" alt="thumbnail-1">
+                <p class="absolute bottom-[10px] righ-[10px] text-white bg-black p-[5px] text-xs">14:24</p>
+            </div>
+            <div class="flex mt-[10px]">
+                <img class="w-9 h-9 rounded-full mr-[15px]" src="img/channel-4.jpeg" alt="profile-pic">
+                <div>
+                    <p class="text-sm font-medium leading-5 mb-[10px]">The Simplest Math Problem No One Can Solve - Collatz</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">Veritasium</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">18M views · 4 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="relative">
+                <img class="w-full" src="img/thumbnail-5.webp" alt="thumbnail-1">
+                <p class="absolute bottom-[10px] righ-[10px] text-white bg-black p-[5px] text-xs">14:24</p>
+            </div>
+            <div class="flex mt-[10px]">
+                <img class="w-9 h-9 rounded-full mr-[15px]" src="img/channel-5.jpeg" alt="profile-pic">
+                <div>
+                    <p class="text-sm font-medium leading-5 mb-[10px]">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">CS Dojo</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">519K views · 5 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="relative">
+                <img class="w-full" src="img/thumbnail-6.webp" alt="thumbnail-1">
+                <p class="absolute bottom-[10px] righ-[10px] text-white bg-black p-[5px] text-xs">14:24</p>
+            </div>
+            <div class="flex mt-[10px]">
+                <img class="w-9 h-9 rounded-full mr-[15px]" src="img/channel-6.jpeg" alt="profile-pic">
+                <div>
+                    <p class="text-sm font-medium leading-5 mb-[10px]">Anything You Can Fit In The Circle I’ll Pay For</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">MrBeast</p>
+                    <p class="text-xs text-[#606060] mt-1 font-medium">141M views · 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
