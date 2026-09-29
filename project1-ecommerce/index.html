@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"DM Sans"', 'sans-serif']
+                    },
+                    colors: {
+                        blacks: '#111111', 
+                        white: '#ffffff',     
+                        darkCard: '#212121',  
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <head>
+        <div class="bg-blacks">
+            <div class="container flex justify-between items-center px-4 mx-auto h-11">
+                <div class="flex hidden gap-5 items-center">
+                    <p class="text-sm text-white">Welcome Milano store!</p>
+                    <div class="flex gap-2">
+                        <a href=""><img class="brightness-0 invert w-[15px] h-[15px]" src="img/facebook.svg" alt="facebook"></a>
+                        <a href=""><img class="brightness-0 invert w-[15px] h-[15px]"  src="img/insta-logo.svg" alt="insta-logo"></a>
+                        <a href=""><img class="brightness-0 invert w-[15px] h-[15px]"  src="img/tiktok-logo.svg" alt="tiktok"></a>
+                        <a href=""><img class="brightness-0 invert w-[15px] h-[15px]"  src="img/youtube-logo.svg" alt="youtube-logo"></a>
+                        <a href=""><img class="brightness-0 invert w-[15px] h-[15px]"  src="img/pinterest-logo.svg" alt="pinterest-logo"></a>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <a href=""><img class="brightness-0 invert w-[10px] h-[10px]" src="img/prev.svg" alt="preconnect"></a>
+                    <p class="text-sm text-white">Summer sale discount off 50% <a href="">Shop sale</a></p>
+                    <a href=""><img class="brightness-0 invert w-[10px] h-[10px]" src="img/next.svg" alt="next"></a>
+                </div>
+                <div class="flex hidden gap-5">
+                    <a class="text-sm text-white" href="">About us</a>
+                    <a class="text-sm text-white" href="">Help Center</a>
+                    <a class="flex gap-2 items-center text-sm text-white" href=""><img class="w-4 h-4 rounded-full" src="img/us.svg" alt="">English <img class="brightness-0 invert" src="img/dropdown.svg" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="container flex justify-between px-4 mx-auto h-[70px] items-center">
+            <a href=""><img class="h-6" src="img/main-logo.webp" alt="main-logo"></a>
+            <nav class="flex gap-8">
+                <a class="text-base font-medium" href="">Home</a>
+                <a class="text-base font-medium" href="">Shop</a>
+                <a class="text-base font-medium" href="">Products</a>
+                <a class="text-base font-medium" href="">Pages</a>
+                <a class="text-base font-medium" href="">Blog</a>
+                <a class="text-base font-medium" href="">Contact Us</a>
+            </nav>
+            <div class="flex gap-5">
+                <a href=""><img class="w-6 h-6" src="img/search-icon.svg" alt="search-icon"></a>
+                <a href=""><img class="w-6 h-6" src="img/profile-icon.svg" alt="profile-icon"></a>
+                <a href=""><img class="w-6 h-6" src="img/heartt.svg" alt="heartt"></a>
+                <a href=""><img class="w-6 h-6" src="img/add-tocart.svg" alt="add-tocart"></a>
+
+            </div>
+        </div>
+        
+        
+    </head>
+   
+    
+</body>
+</html>
