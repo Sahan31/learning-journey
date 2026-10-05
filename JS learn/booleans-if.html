@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(2 < 5);
+
+        if (true) {
+            console.log('Hello');
+        } else {
+            console.log('Bye');
+        }
+
+        if (30 >= 18) {
+            console.log('You can drive');
+        } else {
+            console.log('You can not drive');
+        }
+
+
+        // Logical Operator 
+        // 1.And Operator && both side are true
+        console.log(true && true);
+        
+        // || or operator its check one side true
+        console.log(true || false);
+
+        // not ! operator its do opposite of the value 
+        console.log(!true);
+
+
+
+        // truthy and falsy 
+        // falsy value --- false , 0 , '' , NaN , undefined , null
+        // any value not in this truthy 
+        if (5) {
+            console.log('truthy');
+        }
+    
+        let cartQuantity = 5;
+        if (cartQuantity) {
+            console.log('cart has products');
+        }
+
+        console.log(!0);
+    </script>
+</body>
+</html>
