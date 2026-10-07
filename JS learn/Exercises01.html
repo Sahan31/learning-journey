@@ -53,6 +53,50 @@
             }
         }
         console.log(checkWeather(14));
+
+
+        // 6
+        function formatName (firstName, lastName) {
+            return `${firstName} ${lastName}`;
+        } 
+        console.log(formatName('sahan', 'rashmika'));
+
+        // 7
+        function checkDiscount (isMember, purchaseAmount) {
+            if (isMember && purchaseAmount > 100) {
+                return `true`; 
+            } else {
+                return `false`;
+            }
+        }
+        console.log(checkDiscount(true, 99));
+
+        // 8
+        function getGrade (score) {
+            if (score >= 80) {
+                return `A`;
+            } else if (score >=60 && score <=79) {
+                return `B`;
+            } else if (score >=40 && score <= 59) {
+                return `C`;
+            } else {
+                return `F`;
+            }
+        }
+        console.log (getGrade (30)); 
+
+        // 9
+        function checkEvenOrOdd (number) {
+            if ((number % 2) === 0) {
+                return `Even`;
+            } else {
+                return `Odd`;
+            }
+        }
+        console.log (checkEvenOrOdd (5));
+
+        // 10
+        
     </script>
 </body>
 </html>
