@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises01</title>
+</head>
+<body>
+    <script>
+        // 1
+        function createTax(tax) {
+            let finalTax = tax * 0.1 ;
+            return finalTax;
+        }
+        console.log(createTax(1000));
+
+        // 2
+        function checkAge (age) {
+            if (age >= 18) {
+                return `adult`;
+            } else {
+                return `child`;
+            }
+        }
+        console.log(checkAge(17));
+
+        // 3
+        function isBothTrue(value1, value2) {
+            return value1 && value2; 
+        }
+        console.log(isBothTrue(2, 2));
+
+        // 4
+        function cacululateShipping (price) {
+            if (price >= 50 ) {
+                shippingFee = 0 ;
+            } else if (price < 50) {
+                shippingFee = 5 ;
+            }
+            return price + shippingFee ;
+        }
+        let shippingFee = '';
+        console.log(cacululateShipping(49));
+
+        // 5 
+        function checkWeather (temp) {
+            if (temp > 30) {
+                return `Hot`;
+            } else if (temp >= 15 && temp < 30) {
+                return `Warm`;
+            } else if (temp < 15) {
+                return `Cold`;
+            }
+        }
+        console.log(checkWeather(14));
+    </script>
+</body>
+</html>
