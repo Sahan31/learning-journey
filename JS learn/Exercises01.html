@@ -96,7 +96,57 @@
         console.log (checkEvenOrOdd (5));
 
         // 10
-        
+        function findLarger (num1, num2) {
+            if (num1 > num2) {
+                return `${num1}`;
+            } else if (num2 > num1) {
+                return `${num2}`
+            }
+        }
+        console.log (findLarger (45, 50));
+
+        // 11
+        function checkPass (score1) {
+            if (score1 >= 50) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(checkPass (49));
+
+        // 12 
+        function checkDay (day) {
+            if (day === 'Saturday' || day === 'Sunday') {
+                return `Weekend`;
+            } else {
+                return `Weekday`;
+            }
+        }
+        console.log(checkDay ('Sunday'));
+        console.log(checkDay ('Monday'));
+
+        // 13
+        function canVote (age, hasID) {
+            if (age >= 18 && hasID) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(canVote(18, true));
+
+        // 14 
+        function getTicketPrice (age) {
+            if (age <= 5) {
+                return `0`;
+            } else if (age > 5 && age < 60 ) {
+                return `10`;
+            } else if (age >= 60) {
+                return `5`;
+            }
+        }
+        console.log(getTicketPrice(65));
     </script>
 </body>
 </html>
