@@ -6,7 +6,7 @@
     <title>Objects</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         const product = {
             name : 'socks' ,
             price : 1090 ,
@@ -68,12 +68,44 @@
 
 
 
-    </script>
+    </script> -->
 
 
+    <!-- Exercises  -->
 
 
     <script>
+    const basketBallProduct = {
+        name: 'basketball',
+        price: 2095,
+    };
+    console.log(basketBallProduct);
+
+    basketBallProduct.price = basketBallProduct.price + 500 ;
+    console.log(basketBallProduct);
+
+    basketBallProduct['delivery-time'] = '3days';
+    console.log(basketBallProduct);
+
+    function comparePrice (product1, product2) {
+        if (product1 < product2) {
+            return product1 ;
+        } else {
+            return product2 ;
+        }
+    }
+
+    const product1 = {
+        name: 'basketball',
+        price: 2500
+    };
+
+    const product2 = {
+        name: 'socks',
+        price: 1200
+    };
+
+    console.log(comparePrice(product1, product2))
         
     </script>
 </body>
