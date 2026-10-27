@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Circumference Calculator -->
+    <h1 id="z1h1">Enter the </h1>
+    <label for="">radius:</label>
+    <input type="text" id="z1in1">
+    <button id="z1bt1">submit</button>
+    <p id="z1p1"></p>
+
+    <script>
+        const pi = 3.14159;
+        let radius;
+        let Circumference;
+
+        document.getElementById('z1bt1').onclick = function() {
+            radius = document.getElementById('z1in1').value;
+            radius = Number(radius);
+            Circumference = 2 * pi *radius;
+            document.getElementById('z1p1').textContent = `${Circumference}cm`;
+        }
+    </script>
+</body>
+</html>

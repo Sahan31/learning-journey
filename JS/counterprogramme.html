@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        #z1lb1 {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        div {
+            display: flex;
+            gap: 12px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #ffffff;
+            transition: transform 0.1s ease, opacity 0.2s ease;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+         #z1bt1 {
+            background-color: #e74c3c; /* Decrease - Red */
+        }
+
+        #z1bt2 {
+            background-color: #7f8c8d; /* Reset - Gray */
+        }
+
+        #z1bt3 {
+            background-color: #2ecc71; /* Increase - Green */
+        }
+    </style>
+</head>
+<body>
+    <label for="" id="z1lb1">0</label>
+    <div>
+        <button id="z1bt1">decrease</button>
+        <button id="z1bt2">reset</button>
+        <button id="z1bt3">increase</button>
+
+    </div>
+
+    <script>
+        countBtn = document.getElementById('z1lb1');
+        decreaseBtn = document.getElementById('z1bt1');
+        resetBtn = document.getElementById('z1bt2');
+        increaseBtn = document.getElementById('z1bt3');
+        
+        let count = 0;
+
+        increaseBtn.onclick = function() {
+            count ++ ;
+            countBtn.textContent = count;
+
+        }
+
+        decreaseBtn.onclick = function() {
+            count -- ;
+            countBtn.textContent = count;
+
+        }
+
+        resetBtn.onclick = function() {
+            count = 0 ;
+            countBtn.textContent = count;
+
+        }
+
+        
+    </script>
+</body>
+</html>
