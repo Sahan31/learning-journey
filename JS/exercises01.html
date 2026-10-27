@@ -25,5 +25,173 @@
             document.getElementById('z1p1').textContent = `${Circumference}cm`;
         }
     </script>
+
+
+    <!-- 01  -->
+     <script>
+        const firstName = 'sahan';
+        const age = 26;
+        const isStudent = true;
+
+        console.log(`My name is ${firstName}, I am ${age} years old. Student status: ${isStudent}`);
+     </script>
+
+     <!-- 02  -->
+      <script>
+        const color = 'red';
+        const vehicle = 'car';
+        const myVehicle = `${color} ${vehicle}` ;
+
+        console.log(myVehicle);
+      </script>
+
+      <!-- 03  -->
+       <script>
+        const length = 20 ; 
+        const width = 10 ;
+        const Circumference01 = (2 * (length + width));
+        console.log(Circumference01); 
+       </script>
+
+       <!-- 04  -->
+        <script>
+            const currentYear = 2026 ;
+            let birthYear = 2000; 
+            let age1 = currentYear - birthYear ;
+
+            console.log(age1);
+        </script>
+
+        <!-- 05  -->
+         <script>
+            const price = 100;
+            const discount = 100*0.1 ;
+            const lastPrice = price - discount;
+            console.log(lastPrice);
+         </script>
+
+         <!-- 06  -->
+          <script>
+            const x = 10;
+            const y = 20; 
+          </script>
+
+          <!-- 07  -->
+           <label for="">User Name:</label>
+           <input id="z1in10" type="text">
+           <button id="z1bt10" type="button">submit</button>
+           <p id="z1p10"></p>
+
+           <script>
+            let userName ;
+            document.getElementById('z1bt10').onclick = function() {
+                userName = document.getElementById('z1in10').value ;
+                document.getElementById('z1p10').textContent = `Welcome ${userName}`;
+            }
+           </script>
+
+           <!-- 08  -->
+          <script>
+            let length1 = 10 ; 
+            let width1 = 5 ;
+
+            let area = length1 * width1 ;
+            console.log(area);
+
+            let perimeter = (2* (length1 + width1));
+            console.log(perimeter);
+          </script>
+
+          <!-- 09  -->
+           <input type="text" name="" id="z1in12">
+           <button id="z1bt12">submit</button>
+           <p id="z1p12"></p>
+
+           <script>
+            document.getElementById('z1bt12').onclick = function() {
+                const value = document.getElementById('z1in12').value * 2;
+                document.getElementById('z1p12').textContent = value;
+            }
+           </script>
+
+           <!-- 10  -->
+            <input type="text" name="" id="z1in13">
+            <input type="text" name="" id="z1in14">
+            <button id="z1bt13">submit</button>
+            <p id="z1p13"></p>
+
+            <script>
+                document.getElementById('z1bt13').onclick = function() {
+                    const value1 = Number(document.getElementById('z1in13').value);
+                    const value2 = Number(document.getElementById('z1in14').value);
+                    const value3 = value1 + value2 ;
+                    document.getElementById('z1p13').textContent = value3;
+                }
+            </script>
+
+
+            <!-- 11  -->
+             <input type="text" id="z1in15">
+             <input type="text" id="z1in16">
+             <button id="z1bt14">calculate</button>
+             <p id="z1p14"></p>
+
+             <script>
+                document.getElementById('z1bt14').onclick = function() {
+                    const price = document.getElementById('z1in15').value;
+                    const quantity = document.getElementById('z1in16').value;
+
+                    const total = price * quantity ;
+                    document.getElementById('z1p14').textContent = total ;
+
+                }
+             </script>
+
+
+             <!-- 12  -->
+              <button id="z1bt15">Roll Dice</button>
+              <p id="z1p15">0</p>
+
+              <script>
+                document.getElementById('z1bt15').onclick = function() {
+                    let randonNumber = Math.floor(Math.random()*6) + 1;
+                    document.getElementById('z1p15').textContent = randonNumber;
+                }
+              </script>
+
+
+              <!-- 13  -->
+               <input type="text" name="" id="z1in17">
+               <input type="text" name="" id="z1in18">
+               <button id="z1bt16">Generate Bill</button> <br>
+               <label for="" id="z1lb10"></label><br>
+               <label for="" id="z1lb11"></label><br>
+               <label for="" id="z1lb12"></label><br>
+               <label for="" id="z1lb13"></label><br>
+               <label for="" id="z1lb14"></label>
+
+
+               <script>
+                document.getElementById('z1bt16').onclick = function() {
+                    let ticketCost = Number(document.getElementById('z1in17').value * 1000);
+                    document.getElementById('z1lb10').textContent = `Tickets Subtotal: Rs${ticketCost}`;
+                    let popcornCost = Number(document.getElementById('z1in18').value * 500);
+                    document.getElementById('z1lb11').textContent = `Popcorn Subtotal: Rs${popcornCost}`;
+                    let subTotal = ticketCost + popcornCost ;
+                    document.getElementById('z1lb12').textContent = `Tickets + Popcorn Price: Rs${subTotal}`;
+                    let serviceCharge = subTotal * 0.1;
+                    document.getElementById('z1lb13').textContent = `Service Charge: Rs${serviceCharge}`;
+                    let finalTotal = subTotal + serviceCharge ;
+                    document.getElementById('z1lb14').textContent = `Fianl Total: Rs${finalTotal}`;
+
+
+                }
+               </script>
+
+
+
+
+
+
 </body>
 </html>
