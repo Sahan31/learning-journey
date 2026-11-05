@@ -64,7 +64,7 @@
 
 
     <!-- checked property  -->
-     
+
     <input type="checkbox" id="myCheckBox01" >
     <label for="myCheckBox">Subscribe</label><br><br>
 
@@ -109,5 +109,29 @@
         }
 
     </script>
+
+
+
+    <!-- ternary operator = consition ? codeiftrue : codeiffalse ; -->
+    <script>
+        let age03 = 17 ;
+        let message = age03 >= 18 ? "you are an adult" : "You are a minor";
+        console.log(message); 
+
+
+        let time = 11 ;
+        let finalTime = time < 12 ? "Good Morning!" : "Good evening!";
+        console.log(finalTime);
+
+        let isStudent01 = false ;
+        let message01 = isStudent01 ? "You are a student" : "You are not a student";
+        console.log(message01);
+
+        let price = 120;
+        let discount = price >= 100 ? 10 : 0;
+        let finalPrice = price - (price * (discount / 100));
+        console.log(`Your total is $${finalPrice}`);
+    </script>
+
 </body>
-</html>
+</html> 
