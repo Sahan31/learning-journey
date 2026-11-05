@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- if statements = if a condition is true, execute some code 
+                    if not, do something else  -->
+
+    <script>
+        let age = 13;
+        if (age >= 18) {
+            console.log("You are old enough to enter this site");
+        } else {
+            console.log("You must be 18+ to enter this site");
+        }
+
+
+        let isStudent = false;
+        if (isStudent) {
+            console.log("You are a Student");
+        } else {
+            console.log("You are not a Student"); 
+        }
+
+
+        let age01 = -1;
+        if (age01 >= 18) {
+            console.log("You are old enough to enter this site");
+        } else if (age01 < 0) {
+            console.log("Your age cant be below 0");
+        } else {
+            console.log("You are not old enough");
+        }
+    </script>
+    
+
+    <input type="text" placeholder="Enter your age" id="z1in1">
+    <button id="z1bt1">Enter</button>
+    <label for="" id="z1lb1"></label>
+
+    <script>
+        const ageEnter = document.getElementById('z1in1');
+        const enterB = document.getElementById('z1bt1');
+        const result = document.getElementById('z1lb1');
+        let age02 ;
+
+        enterB.onclick = function() {
+            age02 = Number(ageEnter.value);
+            if(age02 >= 18) {
+                result.textContent = `You are old enough to enter this site`;
+            } else if (age02 < 0) {
+                result.textContent = `Your age cant be below 0`;
+            } else {
+                result.textContent = `You are not old enough`;
+            }
+        }
+
+    </script>
+</body>
+</html>
