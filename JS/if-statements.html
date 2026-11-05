@@ -59,5 +59,55 @@
         }
 
     </script>
+
+    <br><br>
+
+
+    <!-- checked property  -->
+     
+    <input type="checkbox" id="myCheckBox01" >
+    <label for="myCheckBox">Subscribe</label><br><br>
+
+    <input type="radio" name="card" id="myCheckBox02">
+    <label for="myCheckBox">Visa</label><br>
+    <input type="radio" name="card" id="myCheckBox03">
+    <label for="myCheckBox">MasterCard</label><br>
+    <input type="radio" name="card" id="myCheckBox04">
+    <label for="myCheckBox">Paypal</label><br>
+    <button id="submit">submit</button>
+    <p id="result01"></p>
+    <p id="result02"></p>
+
+
+
+    <script>
+        const sub = document.getElementById('myCheckBox01');
+        const visa = document.getElementById('myCheckBox02');
+        const master = document.getElementById('myCheckBox03');
+        const paypal = document.getElementById('myCheckBox04');
+        const submit = document.getElementById('submit');
+        const finalResult = document.getElementById('result01');
+        const finalPayment = document.getElementById('result02');
+
+
+        submit.onclick = function () {
+            if (sub.checked) {
+                finalResult.textContent = `You are Subscribed!`;
+            } else {
+                finalResult.textContent = `You are not Subscribed`;
+            }
+
+            if (visa.checked) {
+                finalPayment.textContent = `You are paying with VISA`;
+            } else if (master.checked) {
+                finalPayment.textContent = `You are paying with MASTER`;
+ 
+            } else if (paypal.checked) {
+                finalPayment.textContent = `You are paying with PAYPAL`;
+ 
+            }
+        }
+
+    </script>
 </body>
 </html>
