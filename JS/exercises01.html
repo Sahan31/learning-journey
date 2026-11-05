@@ -189,6 +189,58 @@
                </script>
 
 
+               <!-- 14  -->
+               <input type="text" id="z1in19" placeholder="show your value in ml">
+               <button id="z1bt17">Check Hydration</button> <br>
+               <label for="" id="z1lb15"></label><br>
+               <label for="" id="z1lb16"></label><br>
+               <label for="" id="z1lb17"></label>
+
+
+
+               <script>
+                document.getElementById('z1bt17').onclick = function() {
+                    let ml = Number(document.getElementById('z1in19').value);
+                    let liter = ml / 1000;
+                    document.getElementById('z1lb15').textContent = `Water drank: ${liter}L`;
+                    let progress = Math.round((ml / 3000) * 100);
+                    document.getElementById('z1lb16').textContent = `Progress: ${progress}%`;
+                    
+                    if (ml >= 3000) {
+                        document.getElementById('z1lb17').textContent = `Goal Achieved`;
+                    } else {
+                        let toDrank = 3000 - ml ;
+                        document.getElementById('z1lb17').textContent = `you have to drink: ${toDrank / 1000}L`
+                    }
+
+
+                }
+               </script>
+
+
+
+<!-- 15  -->
+
+<input type="text" id="z1in20" placeholder="Distance in km">
+<input type="text" id="z1in21" placeholder="km per liter">
+<button id="z1bt18">Calculate trip cost</button>
+<label for="" id="z1lb18"></label>
+<label for="" id="z1lb19"></label>
+
+<script>
+    document.getElementById('z1bt18').onclick = function() {
+        let distance = Number(document.getElementById('z1in20').value);
+        let kmPerLiter = Number(document.getElementById('z1in21').value);
+        let liters = Math.round(distance / kmPerLiter) ;
+        document.getElementById('z1lb18').textContent = `Fuel Needed: ${liters} Liters`;
+
+        let totalCost = liters * 350 ; 
+        document.getElementById('z1lb19').textContent = `Total Cost: Rs${totalCost}`;
+
+    }
+</script>
+
+
 
 
 
