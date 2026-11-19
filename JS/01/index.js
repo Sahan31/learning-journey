@@ -162,3 +162,45 @@
 // console.log(score);
 
 
+
+// ----------------------------------------------------
+
+// Accept user input ------
+
+// let username ;
+// username = window.prompt("What's your username?");
+// console.log(username);
+
+// let username ;
+
+// document.getElementById("mySubmit").onclick = function () {
+//     username = document.getElementById("in1").value ;
+//     document.getElementById("h1").textContent = `Hello ${username}`;
+// }
+
+// question 01 
+// let username ;
+// document.getElementById("submit").onclick = function () {
+//    username = document.getElementById("in2").value ;
+//    document.getElementById("heading").textContent = `Welcome ${username}`;
+// }
+
+// question 2
+// document.getElementById("submit").onclick = function () {
+//     const username = document.getElementById("name").value ;
+//     const birthYear = Number(document.getElementById("birthYear").value);
+//     const age = 2026 - birthYear;
+//     document.getElementById("nameh").textContent = `Hello ${username}` ;
+//     document.getElementById("nameA").textContent = `Your age is ${age}` ;
+// }
+
+
+// question 3 
+// document.getElementById("submit").onclick = function () {
+//     const num1 = Number(document.getElementById("number1").value) ;
+//     const num2 = Number(document.getElementById("number2").value) ;
+//     const total =  num1 + num2 ;
+//     document.getElementById("total").textContent = `Total: ${total}`;
+// }
+
+
