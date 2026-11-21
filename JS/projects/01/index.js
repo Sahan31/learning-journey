@@ -40,3 +40,30 @@ calculateBtn.onclick = function () {
     totalShow.textContent = `Total Price: Rs${totalPrice}`;
 
 }
+
+
+
+
+// Employee Salary Calculator
+const salaryCal = document.getElementById("salaryCal");
+const showName01 = document.getElementById("showName01");
+const showBasicSalary = document.getElementById("showBasicSalary");
+const showallowence = document.getElementById("showallowence");
+const showBonus = document.getElementById("showBonus");
+const showTotalSalary = document.getElementById("showTotalSalary");
+
+salaryCal.onclick = function () {
+    const employeeName = document.getElementById("employeeName").value ;
+    const basicSalary = Number(document.getElementById("basicSalary").value) ;
+    const allowence = Number(document.getElementById("allowence").value) ;
+    const bonus = Number(document.getElementById("bonus").value) ;
+    const totalSalary = basicSalary + allowence + bonus ;
+
+    showName01.textContent = `Employee Name: ${employeeName}` ;
+    showBasicSalary.textContent =`Basic Salary: ${basicSalary}`;
+    showallowence.textContent =`Allowance: ${allowence}`;
+    showBonus.textContent =`Bonus: ${bonus}`;
+    showTotalSalary.textContent =`Total Salary: ${totalSalary}` ;
+
+
+}
