@@ -18,6 +18,7 @@
 // console.log(z, typeof z);
 
 
+// -----------------------------------------------------------------------------
 
 // const ------------- 
 // const pi = 3.14159;
@@ -36,10 +37,10 @@
 // }
 
 
-const pi = 3.14159;
-document.getElementById("bt1").onclick = function () {
-    const radius = Number(document.getElementById("in1").value) ;
-    const area = pi * radius * radius;
-    document.getElementById("result").textContent = `${area} cm`;
-}
+// const pi = 3.14159;
+// document.getElementById("bt1").onclick = function () {
+//     const radius = Number(document.getElementById("in1").value) ;
+//     const area = pi * radius * radius;
+//     document.getElementById("result").textContent = `${area} cm`;
+// }
 
